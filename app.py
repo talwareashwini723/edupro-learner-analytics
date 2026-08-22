@@ -6,10 +6,15 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent
 
-users = pd.read_csv(BASE_DIR / "data" / "users.csv")
-courses = pd.read_csv(BASE_DIR / "data" / "courses.csv")
-transactions = pd.read_csv(BASE_DIR / "data" / "transactions.csv")
-teachers = pd.read_csv(BASE_DIR / "data" / "teachers.csv")
+users = pd.read_csv(BASE_DIR /"users.csv")
+courses = pd.read_csv(BASE_DIR /"courses.csv")
+transactions = pd.read_csv(BASE_DIR /"transactions.csv")
+teachers = pd.read_csv(BASE_DIR /"teachers.csv")
+
+# users = pd.read_csv(BASE_DIR / "data" / "users.csv")
+# courses = pd.read_csv(BASE_DIR / "data" / "courses.csv")
+# transactions = pd.read_csv(BASE_DIR / "data" / "transactions.csv")
+# teachers = pd.read_csv(BASE_DIR / "data" / "teachers.csv")
 
 st.title("📈EduPro Learner Analytics")
 
